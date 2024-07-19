@@ -5,6 +5,9 @@ import * as path from "node:path";
 export default defineConfig({
   plugins: ['@farmfe/plugin-react', postcss()],
   compilation: {
+    output: {
+      publicPath: "./"
+    },
     resolve: {
       alias: {
         "@/": path.join(process.cwd(), "src"),
