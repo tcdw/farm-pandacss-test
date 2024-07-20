@@ -14,5 +14,8 @@ export default defineConfig({
         "@styled-system/": path.join(process.cwd(), "styled-system"),
       },
     },
+    minify: {
+      moduleDecls: false
+    },
   }
 });
